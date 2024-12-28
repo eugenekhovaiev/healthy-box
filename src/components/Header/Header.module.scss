@@ -1,0 +1,70 @@
+@import '@/assets/styles/variables.scss';
+
+.header {
+  width: 100%;
+  position: fixed;
+
+  &__info {
+    border-bottom: 1px solid #f7f7f7;
+  }
+
+  &__infoContainer {
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__infoItem {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 14px;
+    color: $color-light-gray;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav {
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__navPart {
+    width: 100%;
+
+    display: flex;
+    gap: 25px;
+  }
+
+  &__navRight {
+    justify-content: flex-start;
+  }
+
+  &__navLeft {
+    justify-content: flex-end;
+  }
+
+  &__logo {
+    display: block;
+    padding: 5px 10px;
+  }
+
+  &__navItem {
+    transition: color 0.2s;
+
+    color: $color-dark-gray;
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
