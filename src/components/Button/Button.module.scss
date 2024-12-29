@@ -4,18 +4,46 @@
   padding: 15px 25px;
   border-radius: 10px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: $color-yellow;
 
   font-family: $second-family;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
-  color: #3f3f3f;
+  color: $color-gray;
 
   transition: $default-transition;
 
   &:hover {
     background-color: $color-dark-yellow;
     color: $color-gray;
+  }
+
+  &_light {
+    border: 1px solid $color-yellow;
+    background-color: $color-transparent;
+
+    color: $color-yellow;
+  }
+
+  &_arrow {
+    padding: 8px;
+    border: 1px solid $color-strange-yellow;
+
+    &:hover {
+      .button__arrow {
+        color: $color-gray;
+      }
+    }
+  }
+
+  &__arrow {
+    color: $color-strange-yellow;
+
+    transition: $default-transition;
   }
 }

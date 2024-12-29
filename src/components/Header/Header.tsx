@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 
-import locationIcon from '@/assets/icons/location.svg';
-import phoneLineIcon from '@/assets/icons/phone-line.svg';
-import outlineEmailIcon from '@/assets/icons/outline-email.svg';
-import calendarIcon from '@/assets/icons/calendar.svg';
-import logoIcon from '@/assets/icons/logo.svg';
+import locationIcon from '@/assets/icons/header/location.svg';
+import phoneLineIcon from '@/assets/icons/header/phone-line.svg';
+import outlineEmailIcon from '@/assets/icons/header/outline-email.svg';
+import calendarIcon from '@/assets/icons/header/calendar.svg';
+import logoIcon from '@/assets/icons/header/logo.svg';
 
 import styles from './Header.module.scss';
 
