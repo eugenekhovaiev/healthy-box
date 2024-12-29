@@ -2,6 +2,11 @@
 
 .header {
   line-height: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #ffffff;
 
   &__info {
     border-bottom: 1px solid #f7f7f7;
