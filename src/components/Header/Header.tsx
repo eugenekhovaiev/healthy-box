@@ -15,20 +15,20 @@ export const Header = () => {
         <div className={classNames('container', styles.header__infoContainer)}>
           <div className={styles.header__contacts}>
             <li className={styles.header__infoItem}>
-              <img src={locationIcon} alt="location" />
+              <img src={locationIcon} alt="Location" />
               <div>Харків, Україна</div>
             </li>
             <li className={styles.header__infoItem}>
-              <img src={phoneLineIcon} alt="phone" />
+              <img src={phoneLineIcon} alt="Phone" />
               <a href="tel:+380661954934">+380 66 195 49 34</a>
             </li>
             <li className={styles.header__infoItem}>
-              <img src={outlineEmailIcon} alt="email" />
+              <img src={outlineEmailIcon} alt="Email" />
               <a href="mailto:info@healthy-box.co">info@healthy-box.co</a>
             </li>
           </div>
           <li className={styles.header__infoItem}>
-            <img src={calendarIcon} alt="schedule" />
+            <img src={calendarIcon} alt="Schedule" />
             <div>Пн-Пт: 9:00-20:00</div>
           </li>
         </div>
@@ -48,7 +48,7 @@ export const Header = () => {
           </a>
         </div>
         <a href="/" className={styles.header__logo}>
-          <img src={logoIcon} alt="logo" />
+          <img src={logoIcon} alt="Logo" />
         </a>
         <div
           className={classNames(

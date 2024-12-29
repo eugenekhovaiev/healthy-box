@@ -1,8 +1,7 @@
 @import '@/assets/styles/variables.scss';
 
 .header {
-  width: 100%;
-  position: fixed;
+  line-height: 1;
 
   &__info {
     border-bottom: 1px solid #f7f7f7;
@@ -59,7 +58,7 @@
   }
 
   &__navItem {
-    transition: color 0.2s;
+    transition: $default-transition;
 
     color: $color-dark-gray;
 

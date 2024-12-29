@@ -1,0 +1,21 @@
+@import '@/assets/styles/variables.scss';
+
+.button {
+  padding: 15px 25px;
+  border-radius: 10px;
+
+  background-color: $color-yellow;
+
+  font-family: $second-family;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #3f3f3f;
+
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $color-dark-yellow;
+    color: $color-gray;
+  }
+}

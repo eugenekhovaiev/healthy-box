@@ -1,0 +1,24 @@
+@import '@/assets/styles/variables.scss';
+
+.swiper-pagination {
+  --swiper-pagination-bottom: 10px;
+
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-horizontal-gap: 3px;
+
+  background-color: $color-light-yellow;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 5px;
+
+  transition: $default-transition;
+
+  &-active {
+    transform: translateY(2.5px);
+
+    background-color: $color-yellow;
+    --swiper-pagination-bullet-size: 10px;
+  }
+}
