@@ -16,7 +16,7 @@
   text-align: center;
   color: $color-gray;
 
-  transition: $default-transition;
+  transition: $fast-transition;
 
   &:hover {
     background-color: $color-dark-yellow;
@@ -28,11 +28,17 @@
     background-color: $color-transparent;
 
     color: $color-yellow;
+
+    &:hover {
+      border-color: $color-dark-yellow;
+    }
   }
 
-  &_arrow {
+  &_withArrow {
     padding: 8px;
     border: 1px solid $color-strange-yellow;
+
+    color: $color-strange-yellow;
 
     &:hover {
       .button__arrow {
@@ -44,6 +50,6 @@
   &__arrow {
     color: $color-strange-yellow;
 
-    transition: $default-transition;
+    transition: $fast-transition;
   }
 }

@@ -1,3 +1,6 @@
+@import 'swiper/scss';
+@import 'swiper/scss/pagination';
+
 @import '@/assets/styles/variables.scss';
 
 .swiper-pagination {
@@ -13,7 +16,7 @@
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-size: 5px;
 
-  transition: $default-transition;
+  transition: $fast-transition;
 
   &-active {
     transform: translateY(2.5px);

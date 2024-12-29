@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Button } from '../../../components/Button';
 
 import styles from './BannerSlide.module.scss';
@@ -14,7 +15,7 @@ export const BannerSlide = ({ background, title, text }: BannerSlideProps) => {
       <img src={background} alt="Banner" className={styles.slide__background} />
       <div className={styles.slide__content}>
         <div
-          className={styles.slide__title}
+          className={classNames('title', styles.slide__title)}
           dangerouslySetInnerHTML={{ __html: title }}
         />
         <div className={styles.slide__text}>{text}</div>

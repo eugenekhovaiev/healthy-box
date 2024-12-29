@@ -16,6 +16,7 @@ export const Banner = () => {
       modules={[Autoplay, Pagination]}
       spaceBetween={0}
       slidesPerView={1}
+      allowTouchMove={false}
       loop={true}
       autoplay={{ delay: 10000 }}
       speed={1000}

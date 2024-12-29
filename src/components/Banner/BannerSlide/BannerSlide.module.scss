@@ -1,5 +1,3 @@
-@import '@/assets/styles/variables.scss';
-
 .slide {
   position: relative;
   height: 100%;
@@ -26,8 +24,6 @@
   &__title {
     margin-bottom: 15px;
 
-    font-family: $second-family;
-    font-weight: 600;
     font-size: 32px;
     text-align: center;
   }

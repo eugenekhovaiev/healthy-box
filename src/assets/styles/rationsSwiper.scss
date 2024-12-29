@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+
+.rationsCarousel {
+  width: 1110px;
+
+  .swiper-slide {
+    padding: 0 47.5px;
+    transition: padding 1s;
+  }
+
+  .swiper-slide-prev {
+    padding-left: 95px;
+    padding-right: 0;
+  }
+
+  .swiper-slide-next {
+    padding-left: 0;
+    padding-right: 95px;
+  }
+
+  .swiper-slide-active {
+    padding: 0;
+  }
+}
+
+.carouselNext,
+.carouselPrev {
+  position: absolute;
+  top: 311px;
+
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-cool-green;
+
+  cursor: pointer;
+}
+
+.carouselNext {
+  right: 0;
+}
+
+.carouselPrev {
+  left: 0;
+  transform: rotate(180deg);
+}

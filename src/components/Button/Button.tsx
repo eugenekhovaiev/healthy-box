@@ -6,15 +6,17 @@ import ArrowIcon from '@/assets/icons/arrow.svg?react';
 import styles from './Button.module.scss';
 
 interface ButtonProps {
+  className?: string;
   theme?: 'light' | 'dark';
-  arrow?: boolean;
+  withArrow?: boolean;
   onClick?: () => void;
   children?: ReactNode;
 }
 
 export const Button = ({
+  className,
   theme = 'dark',
-  arrow,
+  withArrow,
   onClick,
   children,
 }: ButtonProps) => {
@@ -23,12 +25,13 @@ export const Button = ({
       className={classNames(styles.button, {
         [styles.button_dark]: theme === 'dark',
         [styles.button_light]: theme === 'light',
-        [styles.button_arrow]: arrow,
+        [styles.button_withArrow]: withArrow,
+        [className || '']: className,
       })}
       onClick={onClick}
     >
       {children}
-      {arrow && <ArrowIcon className={styles.button__arrow} />}
+      {withArrow && <ArrowIcon className={styles.button__arrow} />}
     </button>
   );
 };

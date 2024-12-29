@@ -1,0 +1,111 @@
+@import '@/assets/styles/variables.scss';
+
+.foodCard {
+  width: 255px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transform: translateY(-20px);
+
+  transition: $default-transition;
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    height: 82px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 20px;
+
+    transition: height 1s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      border-radius: 20px;
+
+      backdrop-filter: blur(25px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__textWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: font-size 1s;
+  }
+
+  &__energy {
+    font-size: 12px;
+    color: $color-yellow;
+
+    transition: font-size 1s;
+  }
+
+  &__price {
+    font-size: 14px;
+
+    transition: font-size 1s;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &_active {
+    width: 350px;
+    transform: translateY(0px);
+
+    .foodCard {
+      &__name {
+        font-size: 16px;
+      }
+
+      &__energy {
+        font-size: 14px;
+      }
+
+      &__price {
+        font-size: 18px;
+      }
+
+      &__content {
+        height: 215px;
+      }
+    }
+  }
+}

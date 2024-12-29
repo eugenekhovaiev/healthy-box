@@ -6,8 +6,7 @@
 @import '@/assets/styles/reset.scss';
 @import '@/assets/styles/container.scss';
 
-@import 'swiper/scss';
-@import 'swiper/scss/pagination';
+@import '@/assets/styles/typography.scss';
 
 :root {
   font-family: 'Montserrat', sans-serif;

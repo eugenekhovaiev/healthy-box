@@ -20,10 +20,12 @@ export const HowItWorks = () => {
           <div className={styles.bigCard}>
             <div className={styles.bigCard__header}>
               <div className={styles.bigCard__subtitle}>Про нас</div>
-              <Button arrow theme="light" />
+              <Button withArrow theme="light" />
             </div>
             <div className={styles.bigCard__content}>
-              <div className={styles.bigCard__title}>Познайомимось?</div>
+              <div className={classNames('title', styles.bigCard__title)}>
+                Познайомимось?
+              </div>
               <div className={styles.bigCard__text}>
                 Healthy Box – це Ваш простір для усвідомленого здорового
                 харчування. Вибір страв має велике значення для підтримки
@@ -79,7 +81,7 @@ export const HowItWorks = () => {
         <div className={styles.calculator}>
           <div className={styles.calculator__wrapper}>
             <div className={styles.calculator__content}>
-              <div className={styles.calculator__title}>
+              <div className={classNames('title', styles.calculator__title)}>
                 Розрахуйте скільки калорій Вам треба
               </div>
               <div className={styles.calculator__text}>
