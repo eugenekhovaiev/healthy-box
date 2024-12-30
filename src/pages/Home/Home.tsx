@@ -1,5 +1,6 @@
 import { Banner } from '../../components/Banner';
 import { Consultation } from '../../components/Consultation';
+import { Delivery } from '../../components/Delivery';
 import { FAQ } from '../../components/FAQ';
 import { HowItWorks } from '../../components/HowItWorks';
 import { Rations } from '../../components/Rations';
@@ -14,6 +15,7 @@ export const Home = () => {
       <Consultation />
       <WhyWe />
       <FAQ />
+      <Delivery />
     </main>
   );
 };
