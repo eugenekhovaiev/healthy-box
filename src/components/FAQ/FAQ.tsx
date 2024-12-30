@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import { FAQQuestion } from './FAQQuestion';
 
-import leaf1 from '@/assets/images/leaf1.png';
+import leaf from '@/assets/images/faq/leaf.png';
 
 import styles from './FAQ.module.scss';
 
@@ -10,7 +10,7 @@ export const FAQ = () => {
   return (
     <div className={styles.faq}>
       <div className={styles.faq__leaf}>
-        <img src={leaf1} alt="Leaf" />
+        <img src={leaf} alt="Leaf" />
       </div>
       <div className={classNames('container', styles.faq__container)}>
         <div className={classNames('title', styles.faq__title)}>FAQ</div>

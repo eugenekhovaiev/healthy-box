@@ -1,9 +1,32 @@
 @import '@/assets/styles/variables.scss';
 
 .howItWorks {
-  background: url('@/assets/images/how-it-works-bg-1920.png') no-repeat center
-    center / cover;
   color: $color-light-gray;
+
+  position: relative;
+
+  &__leaf1,
+  &__leaf2 {
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__leaf1 {
+    width: 148px;
+
+    left: 0;
+    top: 73px;
+  }
+
+  &__leaf2 {
+    width: 286px;
+
+    right: 0;
+    bottom: 15px;
+  }
 
   &__container {
     padding: 30px 0;
@@ -107,8 +130,8 @@
   height: 325px;
   border-radius: 20px;
 
-  background: url('@/assets/images/calculatorBackground/calculator-bg-1920.png')
-    no-repeat center center / cover;
+  background: url('@/assets/images/calculator/calculator-bg-1920.png') no-repeat
+    center center / cover;
 
   display: flex;
   align-items: center;

@@ -4,8 +4,21 @@
   padding: 30px 0;
   height: 636px;
 
-  background: url('@/assets/images/rationsBackground/ration-bg-1920.png')
-    no-repeat center center / cover;
+  background: url('@/assets/images/rations/rations-bg-1920.png') no-repeat
+    center center / cover;
+
+  position: relative;
+
+  &__leaf {
+    width: 248px;
+
+    position: absolute;
+    bottom: -9px;
+
+    img {
+      width: 100%;
+    }
+  }
 
   &__container {
     position: relative;

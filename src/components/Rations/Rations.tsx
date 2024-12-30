@@ -10,6 +10,7 @@ import maxiPlate from '@/assets/images/food/maxi-plate.png';
 import balancePlate from '@/assets/images/food/balance-plate.png';
 
 import ArrowIcon from '@/assets/icons/arrow.svg?react';
+import leaf from '@/assets/images/rations/leaf.png';
 
 import '@/assets/styles/rationsSwiper.scss';
 import styles from './Rations.module.scss';
@@ -17,6 +18,9 @@ import styles from './Rations.module.scss';
 export const Rations = () => {
   return (
     <div className={styles.rations}>
+      <div className={styles.rations__leaf}>
+        <img src={leaf} alt="Leaf" />
+      </div>
       <div className={classNames('container', styles.rations__container)}>
         <div className={styles.rations__header}>
           <div className={styles.rations__headerTextWrapper}>

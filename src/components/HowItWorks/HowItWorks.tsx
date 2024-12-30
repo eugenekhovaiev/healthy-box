@@ -7,12 +7,20 @@ import logo from '@/assets/images/logo.svg';
 import mentalHealthIcon from '@/assets/icons/howItWorks/mental-health-line.svg';
 import clockIcon from '@/assets/icons/howItWorks/clock-fast.svg';
 import cookIcon from '@/assets/icons/howItWorks/cook.svg';
+import leaf1 from '@/assets/images/howItWorks/leaf1.png';
+import leaf2 from '@/assets/images/howItWorks/leaf2.png';
 
 import styles from './HowItWorks.module.scss';
 
 export const HowItWorks = () => {
   return (
     <section className={styles.howItWorks}>
+      <div className={styles.howItWorks__leaf1}>
+        <img src={leaf1} alt="Leaf" />
+      </div>
+      <div className={styles.howItWorks__leaf2}>
+        <img src={leaf2} alt="Leaf" />
+      </div>
       <div className={classNames('container', styles.howItWorks__container)}>
         <div className={styles.howItWorks__advantages}>
           <div className={styles.howItWorks__logoWrapper}>

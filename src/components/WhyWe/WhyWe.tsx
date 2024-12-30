@@ -6,7 +6,7 @@ import boxIcon from '@/assets/icons/whyWe/box.svg';
 import bookIcon from '@/assets/icons/whyWe/book.svg';
 import supportIcon from '@/assets/icons/whyWe/support.svg';
 import pigMoneyIcon from '@/assets/icons/whyWe/pig-money.svg';
-import leaf2 from '@/assets/images/leaf2.png';
+import leaf from '@/assets/images/whyWe/leaf.png';
 
 import styles from './WhyWe.module.scss';
 import { ReasonCard } from './ReasonCard';
@@ -15,7 +15,7 @@ export const WhyWe = () => {
   return (
     <div className={styles.whyWe}>
       <div className={styles.whyWe__leaf}>
-        <img src={leaf2} alt="Leaf" />
+        <img src={leaf} alt="Leaf" />
       </div>
       <div className={classNames('container', styles.whyWe__container)}>
         <div className={styles.whyWe__textWrapper}>
