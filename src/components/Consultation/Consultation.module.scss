@@ -1,0 +1,35 @@
+@import '@/assets/styles/variables.scss';
+
+.consultation {
+  padding: 30px 0;
+  background-color: $color-cool-green;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  &__textWrapper {
+    width: 646px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__imageWrapper {
+    width: 780px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
