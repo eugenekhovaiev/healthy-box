@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import { Button } from '../Button';
+import { Button } from '../shared/Button';
 import { FoodCard } from './FoodCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';

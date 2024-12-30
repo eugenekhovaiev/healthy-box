@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
-import { Button } from '../Button';
+import { Button } from '../shared/Button';
+import { IconWrapper } from '../shared/IconWrapper';
 
 import logo from '@/assets/images/logo.svg';
 import mentalHealthIcon from '@/assets/icons/howItWorks/mental-health-line.svg';
@@ -35,9 +36,7 @@ export const HowItWorks = () => {
             </div>
           </div>
           <div className={styles.smallCard}>
-            <div className={styles.smallCard__iconWrapper}>
-              <img src={mentalHealthIcon} alt="Mental Health" />
-            </div>
+            <IconWrapper src={mentalHealthIcon} alt="Mental Health" />
             <div className={styles.smallCard__content}>
               <div className={styles.smallCard__title}>Здоров’я та енергія</div>
               <div className={styles.smallCard__text}>
@@ -48,9 +47,7 @@ export const HowItWorks = () => {
             </div>
           </div>
           <div className={styles.smallCard}>
-            <div className={styles.smallCard__iconWrapper}>
-              <img src={clockIcon} alt="Clock" />
-            </div>
+            <IconWrapper src={clockIcon} alt="Clock" />
             <div className={styles.smallCard__content}>
               <div className={styles.smallCard__title}>
                 Економія часу та грошей
@@ -63,9 +60,7 @@ export const HowItWorks = () => {
             </div>
           </div>
           <div className={styles.smallCard}>
-            <div className={styles.smallCard__iconWrapper}>
-              <img src={cookIcon} alt="Cook" />
-            </div>
+            <IconWrapper src={cookIcon} alt="Cook" />
             <div className={styles.smallCard__content}>
               <div className={styles.smallCard__title}>
                 Зручність та різноманіття

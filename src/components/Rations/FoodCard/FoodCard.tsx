@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Button } from '../../Button';
+import { Button } from '../../shared/Button';
 
 import styles from './FoodCard.module.scss';
 

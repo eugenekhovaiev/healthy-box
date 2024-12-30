@@ -1,0 +1,28 @@
+@import '@/assets/styles/variables.scss';
+
+.whyWe {
+  padding: 30px 0;
+
+  background: url('@/assets/images/whyWeBackground/why-we-bg-1920.png')
+    no-repeat center center / cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import { Button } from '../Button';
+import { Button } from '../shared/Button';
 
 import consultationTempImage from '@/assets/images/consultationTemp.png';
 
