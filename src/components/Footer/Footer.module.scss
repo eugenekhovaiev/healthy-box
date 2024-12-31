@@ -1,0 +1,93 @@
+@import '@/assets/styles/variables.scss';
+
+.footer {
+  background-color: $color-cool-green;
+
+  &__contentContainer {
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    border-top: 1px solid #0b3119;
+
+    font-size: 14px;
+  }
+
+  &__bottomContainer {
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__schedule {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+}
+
+.socialMedia {
+  width: 255px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__logo {
+    padding: 0 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__slogan {
+    font-size: 12px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon {
+    max-width: 36px;
+    max-height: 36px;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    font-size: 18px;
+    color: $color-yellow;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 14px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__icon {
+    max-width: 26px;
+    max-height: 26px;
+  }
+}
