@@ -1,0 +1,31 @@
+@import '@/assets/styles/variables.scss';
+
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: $fast-transition;
+
+  img {
+    transition: $fast-transition;
+    opacity: 0;
+  }
+
+  &_checked {
+    background: $color-yellow;
+
+    img {
+      opacity: 1;
+    }
+  }
+
+  &_passive {
+    cursor: default;
+  }
+}

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import checkIcon from '@/assets/icons/check.svg';
+import { Checkbox } from '../../shared/Checkbox';
 
 import styles from './ListItem.module.scss';
 
@@ -11,9 +11,7 @@ interface ListItemProps {
 export const ListItem = ({ children }: ListItemProps) => {
   return (
     <li className={styles.listItem}>
-      <div className={styles.listItem__iconWrapper}>
-        <img src={checkIcon} alt="Check" />
-      </div>
+      <Checkbox passive />
       <div className={styles.listItem__text}>{children}</div>
     </li>
   );
