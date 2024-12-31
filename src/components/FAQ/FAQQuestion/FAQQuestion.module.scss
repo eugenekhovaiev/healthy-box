@@ -42,6 +42,10 @@
     cursor: pointer;
   }
 
+  &__icon {
+    transition: $default-transition;
+  }
+
   &__answer {
     padding: 15px;
   }
