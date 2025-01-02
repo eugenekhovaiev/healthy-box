@@ -1,0 +1,165 @@
+@import '@/assets/styles/variables.scss';
+
+.howItWorks {
+  color: $color-light-gray;
+
+  position: relative;
+
+  &__leaf1,
+  &__leaf2 {
+    position: absolute;
+
+    pointer-events: none;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__leaf1 {
+    width: 148px;
+
+    left: 0;
+    top: 73px;
+  }
+
+  &__leaf2 {
+    width: 286px;
+
+    right: 0;
+    bottom: 15px;
+  }
+
+  &__container {
+    padding: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 243px 138px;
+    gap: 30px;
+  }
+
+  &__logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bigCard {
+  padding: 20px;
+
+  grid-column: 2 / 4;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-family: $second-family;
+    font-weight: 400;
+    color: $color-strange-yellow;
+  }
+
+  &__title {
+    color: $color-dark-gray;
+  }
+}
+
+.smallCard {
+  padding: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+
+  display: flex;
+  gap: 20px;
+
+  &__iconWrapper {
+    width: 44px;
+    height: 44px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: $color-yellow;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: $color-dark-gray;
+  }
+
+  &__text {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+}
+
+.calculator {
+  padding: 0 30px;
+  height: 325px;
+  border-radius: 20px;
+
+  background: url('@/assets/images/calculator/calculator-bg-1920.png') no-repeat
+    center center / cover;
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  &__wrapper {
+    width: 788px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 15px;
+  }
+}

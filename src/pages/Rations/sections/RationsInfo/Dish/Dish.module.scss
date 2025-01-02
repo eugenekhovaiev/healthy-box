@@ -1,0 +1,55 @@
+@import '@/assets/styles/variables.scss';
+
+.dish {
+  height: 95px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__image {
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__time {
+    color: $color-light-gray;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  &__energyWrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__energy {
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-yellow;
+  }
+
+  &__bju {
+    color: $color-light-gray;
+  }
+}

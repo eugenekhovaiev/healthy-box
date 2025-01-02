@@ -1,11 +1,11 @@
-import { Banner } from '../../components/Banner';
-import { Consultation } from '../../components/Consultation';
-import { Delivery } from '../../components/Delivery';
-import { FAQ } from '../../components/FAQ';
-import { Help } from '../../components/Help';
-import { HowItWorks } from '../../components/HowItWorks';
-import { Rations } from '../../components/Rations';
-import { WhyWe } from '../../components/WhyWe';
+import { Banner } from './sections/Banner';
+import { Consultation } from './sections/Consultation';
+import { Delivery } from '../../components/sections/Delivery';
+import { FAQ } from './sections/FAQ';
+import { Help } from '../../components/sections/Help';
+import { HowItWorks } from './sections/HowItWorks';
+import { Rations } from './sections/Rations';
+import { WhyWe } from './sections/WhyWe';
 
 export const Home = () => {
   return (
