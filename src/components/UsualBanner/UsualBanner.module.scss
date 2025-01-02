@@ -1,0 +1,37 @@
+@import '@/assets/styles/variables.scss';
+
+.usualBanner {
+  height: 250px;
+
+  background: url('@/assets/images/usualBanners/usual-banner-bg-1920.png')
+    no-repeat center center / cover;
+
+  &__container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+
+    font-size: 32px;
+  }
+
+  &__breadcrumbs {
+    position: absolute;
+
+    top: 17px;
+    left: 0;
+
+    * {
+      font-family: $font-family;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
