@@ -6,12 +6,18 @@ import leaf from '@/assets/images/delivery/leaf.png';
 
 import styles from './Delivery.module.scss';
 
-export const Delivery = () => {
+interface DeliveryProps {
+  withLeaf?: boolean;
+}
+
+export const Delivery = ({ withLeaf = false }: DeliveryProps) => {
   return (
     <div className={styles.delivery}>
-      <div className={styles.delivery__leaf}>
-        <img src={leaf} alt="Leaf" />
-      </div>
+      {withLeaf && (
+        <div className={styles.delivery__leaf}>
+          <img src={leaf} alt="Leaf" />
+        </div>
+      )}
       <div className={classNames('container', styles.delivery__container)}>
         <div className={styles.delivery__content}>
           <div className={classNames('title', styles.delivery__title)}>

@@ -1,15 +1,10 @@
-@import '@/assets/styles/variables.scss';
-
-.faq {
+.aboutUsInfo {
   padding: 30px 0;
-
   position: relative;
 
-  &__leaf {
-    width: 180px;
-
+  &__leaf1,
+  &__leaf2 {
     position: absolute;
-    top: 18px;
     z-index: 10;
 
     pointer-events: none;
@@ -19,17 +14,33 @@
     }
   }
 
+  &__leaf1 {
+    width: 148px;
+
+    top: 0;
+    left: 0;
+  }
+
+  &__leaf2 {
+    width: 286px;
+
+    right: 0;
+    bottom: 15px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
   }
 
-  &__title {
-    text-align: center;
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
-  &__questions {
+  &__faq {
     display: flex;
     flex-direction: column;
     gap: 10px;

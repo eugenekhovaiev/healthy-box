@@ -2,6 +2,7 @@ import classNames from 'classnames';
 
 import { Button } from '../../../../components/shared/Button';
 import { IconWrapper } from '../../../../components/shared/IconWrapper';
+import { CalculatorBanner } from '../../../../components/shared/CalculatorBanner';
 
 import logo from '@/assets/images/logo.svg';
 import mentalHealthIcon from '@/assets/icons/howItWorks/mental-health-line.svg';
@@ -81,24 +82,7 @@ export const HowItWorks = () => {
             </div>
           </div>
         </div>
-        <div className={styles.calculator}>
-          <div className={styles.calculator__wrapper}>
-            <div className={styles.calculator__content}>
-              <div className={classNames('title', styles.calculator__title)}>
-                Розрахуйте скільки калорій Вам треба
-              </div>
-              <div className={styles.calculator__text}>
-                Розрахуйте скільки калорій вам потрібно завдяки нашому
-                калькулятору, або ж телефонуйте нам та отримуйте безкоштовну
-                консультацію стосовно вашого раціону.
-              </div>
-            </div>
-            <div className={styles.calculator__buttons}>
-              <Button>Безкоштовна консультація</Button>
-              <Button theme="light">Відкрити калькулятор</Button>
-            </div>
-          </div>
-        </div>
+        <CalculatorBanner />
       </div>
     </section>
   );

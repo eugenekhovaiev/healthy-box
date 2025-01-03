@@ -8,6 +8,7 @@
   &__leaf1,
   &__leaf2 {
     position: absolute;
+    z-index: 10;
 
     pointer-events: none;
 
@@ -124,42 +125,5 @@
   &__text {
     line-height: 1.2;
     font-size: 14px;
-  }
-}
-
-.calculator {
-  padding: 0 30px;
-  height: 325px;
-  border-radius: 20px;
-
-  background: url('@/assets/images/calculator/calculator-bg-1920.png') no-repeat
-    center center / cover;
-
-  display: flex;
-  align-items: center;
-
-  color: #ffffff;
-
-  &__wrapper {
-    width: 788px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  &__title {
-    font-size: 24px;
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 15px;
   }
 }

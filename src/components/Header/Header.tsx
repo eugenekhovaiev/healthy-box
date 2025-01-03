@@ -37,7 +37,7 @@ export const Header = () => {
         <div
           className={classNames(styles.header__navPart, styles.header__navLeft)}
         >
-          <a href="/#" className={styles.header__navItem}>
+          <a href="/about-us" className={styles.header__navItem}>
             Про нас
           </a>
           <a href="/rations" className={styles.header__navItem}>

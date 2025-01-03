@@ -16,7 +16,7 @@ export const Home = () => {
       <Consultation />
       <WhyWe />
       <FAQ />
-      <Delivery />
+      <Delivery withLeaf />
       <Help />
     </main>
   );
