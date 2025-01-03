@@ -1,0 +1,25 @@
+@import '@/assets/styles/variables.scss';
+
+.textInput {
+  padding: 20px;
+  width: 100%;
+
+  border: 1px solid $color-almost-white;
+  border-radius: 10px;
+
+  background-color: $color-transparent;
+
+  color: #ffffff;
+
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::placeholder {
+    color: #d0d0d0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

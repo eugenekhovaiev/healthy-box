@@ -9,9 +9,9 @@ import banner4 from '@/assets/images/aboutUsInfo/banner4-1920.png';
 
 import { OurAdvantage } from './OurAdvantage';
 import { CalculatorBanner } from '../../../../components/shared/CalculatorBanner';
+import { FAQQuestion } from '../../../../components/shared/FAQQuestion';
 
 import styles from './AboutUsInfo.module.scss';
-import { FAQQuestion } from '../../../../components/shared/FAQQuestion';
 
 export const AboutUsInfo = () => {
   return (

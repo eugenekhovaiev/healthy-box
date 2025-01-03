@@ -10,11 +10,7 @@ interface IconWrapperProps {
 
 export const IconWrapper = ({ className, src, alt }: IconWrapperProps) => {
   return (
-    <div
-      className={classNames(styles.iconWrapper, {
-        [className || '']: className,
-      })}
-    >
+    <div className={classNames(styles.iconWrapper, className)}>
       <img src={src} alt={alt} />
     </div>
   );

@@ -20,10 +20,13 @@ export const FAQQuestion = ({
 
   return (
     <div
-      className={classNames(styles.faqQuestion, {
-        [className || '']: className,
-        [styles.faqQuestion_opened]: isOpened,
-      })}
+      className={classNames(
+        styles.faqQuestion,
+        {
+          [styles.faqQuestion_opened]: isOpened,
+        },
+        className,
+      )}
     >
       <div className={styles.faqQuestion__questionWrapper}>
         <div className={styles.faqQuestion__question}>{question}</div>

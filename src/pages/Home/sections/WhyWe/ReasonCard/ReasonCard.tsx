@@ -20,11 +20,7 @@ export const ReasonCard = ({
   text,
 }: ReasonCardProps) => {
   return (
-    <div
-      className={classNames(styles.reasonCard, {
-        [className || '']: className,
-      })}
-    >
+    <div className={classNames(styles.reasonCard, className)}>
       <IconWrapper src={iconSrc} alt={iconAlt} />
       <div className={styles.reasonCard__textWrapper}>
         <div className={styles.reasonCard__title}>{title}</div>

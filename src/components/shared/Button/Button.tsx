@@ -22,12 +22,15 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={classNames(styles.button, {
-        [styles.button_dark]: theme === 'dark',
-        [styles.button_light]: theme === 'light',
-        [styles.button_withArrow]: withArrow,
-        [className || '']: className,
-      })}
+      className={classNames(
+        styles.button,
+        {
+          [styles.button_dark]: theme === 'dark',
+          [styles.button_light]: theme === 'light',
+          [styles.button_withArrow]: withArrow,
+        },
+        className,
+      )}
       onClick={onClick}
     >
       {children}

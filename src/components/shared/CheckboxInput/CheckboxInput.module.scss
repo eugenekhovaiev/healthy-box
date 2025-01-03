@@ -1,0 +1,15 @@
+@import '@/assets/styles/variables.scss';
+
+.checkboxInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+
+  &__label {
+    a {
+      color: $color-yellow;
+    }
+  }
+}

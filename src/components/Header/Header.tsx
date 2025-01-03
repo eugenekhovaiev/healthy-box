@@ -43,7 +43,7 @@ export const Header = () => {
           <a href="/rations" className={styles.header__navItem}>
             Раціони
           </a>
-          <a href="/#" className={styles.header__navItem}>
+          <a href="/calculator" className={styles.header__navItem}>
             Калькулятор
           </a>
         </div>

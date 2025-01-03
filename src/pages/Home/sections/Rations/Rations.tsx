@@ -79,7 +79,7 @@ export const Rations = () => {
                 image={maxiPlate}
                 name="Раціон “Maxi”"
                 energy="2200-2400 ккал"
-                price="699 UAH"
+                price="659 UAH"
                 isActive={isActive}
               />
             )}
@@ -112,7 +112,7 @@ export const Rations = () => {
                 image={maxiPlate}
                 name="Раціон “Maxi”"
                 energy="2200-2400 ккал"
-                price="699 UAH"
+                price="659 UAH"
                 isActive={isActive}
               />
             )}

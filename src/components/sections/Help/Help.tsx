@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 
 import { Button } from '../../shared/Button';
-import { Checkbox } from '../../shared/Checkbox';
+import { TextInput } from '../../shared/TextInput';
+import { CheckboxInput } from '../../shared/CheckboxInput';
 
 import styles from './Help.module.scss';
 
@@ -19,44 +20,23 @@ export const Help = () => {
               допомогу.
             </div>
           </div>
-          <div className={styles.form__formWrapper}>
-            <form className={styles.form__fields}>
-              <input
-                className={styles.form__input}
-                type="text"
-                placeholder="Ім'я...."
-              />
-              <input
-                className={styles.form__input}
-                type="tel"
-                placeholder="Номер телефону...."
-              />
-              <input
-                className={styles.form__input}
-                type="email"
-                placeholder="Email...."
-              />
-            </form>
-            <div className={styles.form__agreements}>
-              <div className={styles.form__agreement}>
-                <Checkbox />
-                <label className={styles.form__label} htmlFor="agreements">
+          <div className={styles.form__fields}>
+            <div className={styles.form__textInputs}>
+              <TextInput type="text" placeholder="Ім'я...." />
+              <TextInput type="tel" placeholder="Номер телефону...." />
+              <TextInput type="email" placeholder="Email...." />
+            </div>
+            <div className={styles.form__checkboxInputs}>
+              <CheckboxInput>
+                <div>
                   Я ознайомлений та згоден з “Режимом прийому і зміни замовлень”
-                </label>
-              </div>
-              <div className={styles.form__agreement}>
-                <Checkbox />
-                <label className={styles.form__label} htmlFor="agreements">
-                  Я ознайомлений та згоден з{' '}
-                  <a href="/#" className={styles.form__label_yellow}>
-                    “ Договором публічної оферти ”
-                  </a>{' '}
-                  і{' '}
-                  <a href="/#" className={styles.form__label_yellow}>
-                    “ Політикою конфіденційності ”
-                  </a>
-                </label>
-              </div>
+                </div>
+              </CheckboxInput>
+              <CheckboxInput>
+                Я ознайомлений та згоден з{' '}
+                <a href="/#">“ Договором публічної оферти ”</a> і{' '}
+                <a href="/#">“ Політикою конфіденційності ”</a>
+              </CheckboxInput>
             </div>
             <Button className={styles.form__button}>Відправити</Button>
           </div>

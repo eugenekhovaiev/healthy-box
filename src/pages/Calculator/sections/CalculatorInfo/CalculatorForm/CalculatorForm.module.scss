@@ -1,0 +1,92 @@
+@import '@/assets/styles/variables.scss';
+
+.calculatorForm {
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: url('@/assets/images/calculatorForm/calculator-form-bg-1920.png')
+    no-repeat center center / cover;
+  border-radius: 20px;
+
+  &__textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__fields {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    position: relative;
+    z-index: 0;
+
+    border-radius: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      border-radius: 20px;
+
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & > * {
+      width: 100%;
+    }
+  }
+
+  &__checkboxInput {
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+}
