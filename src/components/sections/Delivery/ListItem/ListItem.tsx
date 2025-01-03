@@ -11,7 +11,7 @@ interface ListItemProps {
 export const ListItem = ({ children }: ListItemProps) => {
   return (
     <li className={styles.listItem}>
-      <Checkbox passive />
+      <Checkbox passive checked />
       <div className={styles.listItem__text}>{children}</div>
     </li>
   );

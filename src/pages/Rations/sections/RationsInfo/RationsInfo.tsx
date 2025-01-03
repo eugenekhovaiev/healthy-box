@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import classNames from 'classnames';
 
 import leaf1 from '@/assets/images/howItWorks/leaf1.png';
@@ -23,7 +25,35 @@ import { FAQQuestion } from '../../../../components/shared/FAQQuestion';
 import styles from './RationsInfo.module.scss';
 
 export const RationsInfo = () => {
-  const [activeRation, setActiveRation] = useState(0);
+  const [activeRation, setActiveRation] = useState('');
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const ration = params.get('ration');
+    if (ration) {
+      setActiveRation(ration);
+    }
+  }, [location]);
+
+  const updateRationInURL = (ration: string) => {
+    const params = new URLSearchParams(location.search);
+    params.set('ration', ration);
+    window.history.replaceState(
+      {},
+      '',
+      `${location.pathname}?${params.toString()}`,
+    );
+  };
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const ration = params.get('ration');
+    if (ration) {
+      setActiveRation(ration);
+    }
+  }, [location]);
 
   return (
     <div className={styles.rationsInfo}>
@@ -37,27 +67,36 @@ export const RationsInfo = () => {
         <div className={styles.rationsInfo__switcher}>
           <button
             className={classNames(styles.switcherItem, {
-              [styles.switcherItem_active]: activeRation === 0,
+              [styles.switcherItem_active]: activeRation === 'fitness',
             })}
-            onClick={() => setActiveRation(0)}
+            onClick={() => {
+              setActiveRation('fitness');
+              updateRationInURL('fitness');
+            }}
           >
             <div className={styles.switcherItem__title}>Fitness</div>
             <div className={styles.switcherItem__energy}>1200-1400 ккал</div>
           </button>
           <button
             className={classNames(styles.switcherItem, {
-              [styles.switcherItem_active]: activeRation === 1,
+              [styles.switcherItem_active]: activeRation === 'balance',
             })}
-            onClick={() => setActiveRation(1)}
+            onClick={() => {
+              setActiveRation('balance');
+              updateRationInURL('balance');
+            }}
           >
             <div className={styles.switcherItem__title}>Balance</div>
             <div className={styles.switcherItem__energy}>1600-1800 ккал</div>
           </button>
           <button
             className={classNames(styles.switcherItem, {
-              [styles.switcherItem_active]: activeRation === 2,
+              [styles.switcherItem_active]: activeRation === 'maxi',
             })}
-            onClick={() => setActiveRation(2)}
+            onClick={() => {
+              setActiveRation('maxi');
+              updateRationInURL('maxi');
+            }}
           >
             <div className={styles.switcherItem__title}>Maxi</div>
             <div className={styles.switcherItem__energy}>2200-2400 ккал</div>
@@ -66,7 +105,7 @@ export const RationsInfo = () => {
         <div className={styles.rationsInfo__ration}>
           <div className={styles.rationsInfo__dishesWrapper}>
             <div className={styles.rationsInfo__title}>Раціон</div>
-            {activeRation === 0 && (
+            {activeRation === 'fitness' && (
               <div className={styles.rationsInfo__dishes}>
                 <Dish
                   image={fitnessBreakfast}
@@ -91,7 +130,7 @@ export const RationsInfo = () => {
                 />
               </div>
             )}
-            {activeRation === 1 && (
+            {activeRation === 'balance' && (
               <div className={styles.rationsInfo__dishes}>
                 <Dish
                   image={balanceBreakfast}
@@ -123,7 +162,7 @@ export const RationsInfo = () => {
                 />
               </div>
             )}
-            {activeRation === 2 && (
+            {activeRation === 'maxi' && (
               <div className={styles.rationsInfo__dishes}>
                 <Dish
                   image={maxiBreakfast}
@@ -165,7 +204,7 @@ export const RationsInfo = () => {
                 активністю
               </div>
             </div>
-            {activeRation === 0 && (
+            {activeRation === 'fitness' && (
               <div className={styles.rationsInfo__priceList}>
                 <PriceItem
                   time="2 тестових дня"
@@ -182,7 +221,7 @@ export const RationsInfo = () => {
                 />
               </div>
             )}
-            {activeRation === 1 && (
+            {activeRation === 'balance' && (
               <div className={styles.rationsInfo__priceList}>
                 <PriceItem
                   time="2 тестових дня"
@@ -199,7 +238,7 @@ export const RationsInfo = () => {
                 />
               </div>
             )}
-            {activeRation === 2 && (
+            {activeRation === 'maxi' && (
               <div className={styles.rationsInfo__priceList}>
                 <PriceItem
                   time="2 тестових дня"

@@ -1,25 +1,39 @@
 @import '@/assets/styles/variables.scss';
 
 .textInput {
-  padding: 20px;
   width: 100%;
+  position: relative;
 
-  border: 1px solid $color-almost-white;
-  border-radius: 10px;
+  &__input {
+    padding: 20px;
+    width: 100%;
 
-  background-color: $color-transparent;
+    border: 1px solid $color-almost-white;
+    border-radius: 10px;
 
-  color: #ffffff;
+    background-color: $color-transparent;
 
-  font-family: $font-family;
-  font-size: 18px;
-  font-weight: 400;
+    color: #ffffff;
 
-  &::placeholder {
-    color: #d0d0d0;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: 400;
+
+    &::placeholder {
+      color: #d0d0d0;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  &:focus {
-    outline: none;
+  &__error {
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+
+    font-size: 1rem;
+    color: #ff0000;
   }
 }
